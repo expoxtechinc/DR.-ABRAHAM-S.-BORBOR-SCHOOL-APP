@@ -3,96 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DASBMSE App</title>
+<title>DASBMSE School App</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #020617, #0f172a);
-  color: white;
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#020617,#0f172a);
+  color:white;
+  overflow-x:hidden;
 }
 
 /* HEADER */
-.header {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #1e3a8a, #facc15);
-  color: #000;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.header{
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(135deg,#1e3a8a,#facc15);
+  color:black;
+  box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
-
-.header h1 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.tagline {
-  font-style: italic;
-}
+.header h1{font-size:32px;}
+.tagline{font-style:italic;}
 
 /* BUTTON */
-.download-btn button {
-  margin-top: 20px;
-  padding: 15px 30px;
-  font-size: 18px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(145deg, gold, #facc15);
-  color: black;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(255,215,0,0.6);
-  transition: 0.3s;
+.download-btn button{
+  margin-top:25px;
+  padding:16px 35px;
+  font-size:18px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(145deg,gold,#facc15);
+  color:black;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(255,215,0,0.7);
+  transition:0.3s;
+}
+.download-btn button:hover{
+  transform:scale(1.1);
 }
 
-.download-btn button:hover {
-  transform: scale(1.05);
+/* SECTION */
+.section{
+  padding:50px 20px;
+  text-align:center;
 }
 
-/* SECTIONS */
-.section {
-  padding: 30px 20px;
-  text-align: center;
+/* GLASS CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  margin:20px auto;
+  padding:20px;
+  border-radius:15px;
+  max-width:400px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  transition:0.4s;
+}
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
 }
 
-/* 3D CARDS */
-.card {
-  background: linear-gradient(145deg, #1e293b, #0f172a);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 
-    5px 5px 15px rgba(0,0,0,0.7),
-    -5px -5px 15px rgba(255,255,255,0.05);
-  transition: 0.3s;
+/* BRAND */
+.brand{
+  background:linear-gradient(135deg,#0ea5e9,#facc15);
+  color:black;
+  padding:25px;
+  border-radius:15px;
+  margin:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.02);
+/* SCREENSHOT SLIDER */
+.slider{
+  display:flex;
+  overflow-x:auto;
+  gap:15px;
+  padding:20px;
+}
+.slide{
+  min-width:200px;
+  height:400px;
+  background:linear-gradient(145deg,#1e293b,#020617);
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.6);
 }
 
-/* BRAND SECTION */
-.brand {
-  background: linear-gradient(135deg, #0ea5e9, #facc15);
-  padding: 25px;
-  border-radius: 15px;
-  margin: 20px;
-  color: black;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+/* INSTALL STEPS */
+.steps{
+  text-align:left;
+  max-width:500px;
+  margin:auto;
+}
+.steps p{
+  margin:10px 0;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0);}
+}
+.float{
+  animation:float 3s ease-in-out infinite;
 }
 
 /* FOOTER */
-.footer {
-  text-align: center;
-  padding: 30px;
-  color: #94a3b8;
-  font-size: 14px;
+.footer{
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
 }
-
-.footer a {
-  color: gold;
-  text-decoration: none;
-}
+.footer a{color:gold;text-decoration:none;}
 </style>
 </head>
 
@@ -100,7 +126,7 @@ body {
 
 <!-- HEADER -->
 <div class="header">
-  <h1>DASBMSE School App</h1>
+  <h1 class="float">DASBMSE School App</h1>
   <p class="tagline">"We Don't Just Teach, We Inspire."</p>
 
   <div class="download-btn">
@@ -113,8 +139,8 @@ body {
 <!-- BRAND -->
 <div class="section">
   <div class="brand">
-    <h2>Powered by SAS TECH INC</h2>
-    <p>We build modern websites & mobile apps</p>
+    <h2>SAS TECH INC</h2>
+    <p>Building modern apps & websites</p>
     <a href="https://sastechinc-bp.vercel.app" target="_blank">Visit Website</a>
   </div>
 </div>
@@ -127,67 +153,63 @@ body {
 
 <!-- FEATURES -->
 <div class="section">
+  <div class="card"><h3>📚 Quality Education</h3></div>
+  <div class="card"><h3>🏆 Excellence</h3></div>
+  <div class="card"><h3>⚖ Discipline</h3></div>
+</div>
 
-  <div class="card">
-    <h3>📚 Quality Education</h3>
-    <p>Rigorous academic programs designed to inspire students.</p>
+<!-- SCREENSHOTS -->
+<div class="section">
+  <h2>App Preview</h2>
+  <div class="slider">
+    <div class="slide">Screenshot 1</div>
+    <div class="slide">Screenshot 2</div>
+    <div class="slide">Screenshot 3</div>
   </div>
-
-  <div class="card">
-    <h3>🏆 Excellence</h3>
-    <p>Striving for the highest standards in all areas.</p>
-  </div>
-
-  <div class="card">
-    <h3>⚖ Discipline</h3>
-    <p>Building strong character and responsibility.</p>
-  </div>
-
 </div>
 
 <!-- ABOUT -->
 <div class="section">
-  <h2>About DASBMSE</h2>
   <div class="card">
+    <h2>About</h2>
     <p>
-      Founded in 2019 in Mount Barclay, Dr. Abraham S. Borbor Memorial School 
-      of Excellence is committed to raising disciplined and responsible young 
-      Liberians prepared to lead in their communities and beyond.
+      Founded in 2019, DASBMSE provides faith-grounded education 
+      to raise disciplined and responsible young Liberians.
     </p>
   </div>
 </div>
 
 <!-- ACHIEVEMENTS -->
 <div class="section">
-  <h2>Achievements</h2>
+  <div class="card">🎓 100% WAEC Pass Rate</div>
+  <div class="card">🥇 Quiz Champions</div>
+  <div class="card">🏅 Community Award</div>
+</div>
 
-  <div class="card">
-    <h3>🎓 100% WAEC Pass Rate (2024)</h3>
-  </div>
-
-  <div class="card">
-    <h3>🥇 Inter-School Quiz Champions</h3>
-  </div>
-
-  <div class="card">
-    <h3>🏅 Community Service Award</h3>
+<!-- INSTALL GUIDE -->
+<div class="section">
+  <div class="card steps">
+    <h2>How to Install</h2>
+    <p>1. Click Download App</p>
+    <p>2. Open the APK file</p>
+    <p>3. Allow "Install from Unknown Sources"</p>
+    <p>4. Install and enjoy 🎉</p>
   </div>
 </div>
 
 <!-- CONTACT -->
 <div class="section">
-  <h2>Contact</h2>
-
   <div class="card">
+    <h2>Contact</h2>
     <p>📍 Mount Barclay, Monrovia</p>
     <p>📞 +231 88 663 3880</p>
-    <p>📧 info@dasbmse.edu.lr</p>
+    <p>📧 borborschool20219@yahoo.com</p>
   </div>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-  © 2026 DASBMSE School App <br><br>
+  © 2026 DASBMSE App <br><br>
   Powered by 
   <a href="https://sastechinc-bp.vercel.app" target="_blank">
     SAS TECH INC
