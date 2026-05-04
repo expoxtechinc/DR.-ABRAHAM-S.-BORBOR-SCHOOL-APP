@@ -6,11 +6,12 @@
 
 <title>Dr. Abraham S. Borbor App | DASBMSE School</title>
 
-<meta name="description" content="Official DASBMSE School App - Dr. Abraham S. Borbor App. Education, discipline, excellence in Liberia.">
+<!-- SEO -->
+<meta name="description" content="Official DASBMSE School App - Dr. Abraham S. Borbor App. Education, discipline, and excellence in Liberia.">
 <meta name="keywords" content="DASBMSE, Borbor School, Liberia School App, Monrovia Education, SAS TECH INC">
 <meta name="author" content="SAS TECH INC">
 
-<!-- SEO OPEN GRAPH -->
+<!-- OPEN GRAPH -->
 <meta property="og:title" content="Dr. Abraham S. Borbor App">
 <meta property="og:description" content="Official School App for DASBMSE - Liberia Education Platform">
 <meta property="og:url" content="https://dasbmsoe-official.vercel.app">
@@ -23,14 +24,111 @@
 <!-- GOOGLE VERIFICATION -->
 <meta name="google-site-verification" content="google106b582ba6c36c64.html">
 
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "DASBMSE School",
+  "url": "https://dasbmsoe-official.vercel.app",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Monrovia",
+    "addressCountry": "Liberia"
+  }
+}
+</script>
+
 <style>
-body{margin:0;font-family:Arial;background:#0f172a;color:white}
-header{padding:60px;text-align:center;background:linear-gradient(135deg,#1e3a8a,#facc15);color:black}
-h1{margin:0;font-size:32px}
-section{padding:40px;text-align:center}
-.card{background:#1e293b;margin:15px auto;padding:20px;border-radius:12px;max-width:400px}
-footer{text-align:center;padding:20px;color:#94a3b8}
-a{color:gold}
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  background:linear-gradient(135deg,#020617,#0f172a);
+  color:white;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:70px 20px;
+  background:linear-gradient(135deg,#1e3a8a,#facc15);
+  color:black;
+}
+
+header h1{
+  font-size:34px;
+  margin:0;
+}
+
+.tagline{
+  font-style:italic;
+  margin-top:10px;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:20px;
+  padding:14px 30px;
+  border:none;
+  border-radius:10px;
+  background:gold;
+  cursor:pointer;
+  font-size:16px;
+}
+
+/* SECTION */
+section{
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  margin:15px auto;
+  max-width:420px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* BRAND */
+.brand{
+  background:linear-gradient(135deg,#0ea5e9,#facc15);
+  color:black;
+  padding:20px;
+  border-radius:12px;
+  margin:20px;
+}
+
+/* SLIDER */
+.slider{
+  display:flex;
+  overflow-x:auto;
+  gap:15px;
+  padding:20px;
+}
+
+.slide{
+  min-width:220px;
+  height:350px;
+  background:#1e293b;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  color:#94a3b8;
+}
+
+a{color:gold;text-decoration:none}
 </style>
 
 </head>
@@ -39,8 +137,25 @@ a{color:gold}
 
 <header>
   <h1>Dr. Abraham S. Borbor App</h1>
-  <p>"We Don't Just Teach, We Inspire."</p>
+  <p class="tagline">"We Don't Just Teach, We Inspire."</p>
+
+  <a href="app-release.apk" download>
+    <button class="btn">⬇ Download App</button>
+  </a>
 </header>
+
+<section>
+  <div class="brand">
+    <h2>SAS TECH INC</h2>
+    <p>Modern Apps & Web Solutions</p>
+    <a href="https://sastechinc-bp.vercel.app" target="_blank">Visit Website</a>
+  </div>
+</section>
+
+<section>
+  <h2>Shaping Tomorrow's Leaders</h2>
+  <p>Mount Barclay, Monrovia, Liberia</p>
+</section>
 
 <section>
   <div class="card">📚 Quality Education</div>
@@ -49,13 +164,49 @@ a{color:gold}
 </section>
 
 <section>
-  <h2>About DASBMSE</h2>
-  <p>Faith-based education system in Monrovia, Liberia.</p>
+  <h2>App Preview</h2>
+  <div class="slider">
+    <div class="slide">Home Dashboard</div>
+    <div class="slide">School Portal</div>
+    <div class="slide">Results System</div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>About DASBMSE</h2>
+    <p>
+      A faith-based institution dedicated to raising disciplined and educated leaders in Liberia.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="card">🎓 100% WAEC Pass Rate</div>
+  <div class="card">🥇 Academic Excellence</div>
+  <div class="card">🏅 Community Recognition</div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>📍 Mount Barclay, Monrovia</p>
+    <p>📞 +231 88 663 3880</p>
+    <p>📧 borborschool20219@yahoo.com</p>
+  </div>
 </section>
 
 <footer>
-  © 2026 DASBMSE | Powered by SAS TECH INC
+  © 2026 Dr. Abraham S. Borbor App <br>
+  Powered by <a href="https://sastechinc-bp.vercel.app">SAS TECH INC</a>
 </footer>
+
+<!-- SERVICE WORKER -->
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
+</script>
 
 </body>
 </html>
