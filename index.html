@@ -3,10 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DASBMSE School App</title>
+
+<title>Dr. Abraham S. Borbor App</title>
+
+<!-- SEO -->
+<meta name="description" content="Official DASBMSE School App - Dr. Abraham S. Borbor App. Education, excellence, and discipline in Liberia.">
+<meta name="keywords" content="DASBMSE, Borbor School, Liberia School App, Monrovia Education">
+<meta name="author" content="SAS TECH INC">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dr. Abraham S. Borbor App">
+<meta property="og:description" content="Official School Mobile App for DASBMSE - Liberia Education Platform">
+<meta property="og:url" content="https://dasbmsoe-official.vercel.app">
+<meta property="og:type" content="website">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#facc15">
+
+<!-- Google Verification -->
+<meta name="google-site-verification" content="google106b582ba6c36c64.html">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
+
 body{
   font-family:'Segoe UI',sans-serif;
   background:linear-gradient(135deg,#020617,#0f172a);
@@ -17,13 +37,21 @@ body{
 /* HEADER */
 .header{
   text-align:center;
-  padding:60px 20px;
+  padding:70px 20px;
   background:linear-gradient(135deg,#1e3a8a,#facc15);
   color:black;
   box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
-.header h1{font-size:32px;}
-.tagline{font-style:italic;}
+
+.header h1{
+  font-size:34px;
+  font-weight:bold;
+}
+
+.tagline{
+  font-style:italic;
+  margin-top:10px;
+}
 
 /* BUTTON */
 .download-btn button{
@@ -38,6 +66,7 @@ body{
   box-shadow:0 10px 25px rgba(255,215,0,0.7);
   transition:0.3s;
 }
+
 .download-btn button:hover{
   transform:scale(1.1);
 }
@@ -48,17 +77,18 @@ body{
   text-align:center;
 }
 
-/* GLASS CARD */
+/* CARD */
 .card{
   background:rgba(255,255,255,0.05);
   backdrop-filter:blur(15px);
   margin:20px auto;
   padding:20px;
   border-radius:15px;
-  max-width:400px;
+  max-width:420px;
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
   transition:0.4s;
 }
+
 .card:hover{
   transform:translateY(-10px) scale(1.03);
 }
@@ -73,16 +103,17 @@ body{
   box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* SCREENSHOT SLIDER */
+/* SLIDER */
 .slider{
   display:flex;
   overflow-x:auto;
   gap:15px;
   padding:20px;
 }
+
 .slide{
-  min-width:200px;
-  height:400px;
+  min-width:220px;
+  height:380px;
   background:linear-gradient(145deg,#1e293b,#020617);
   border-radius:20px;
   display:flex;
@@ -92,22 +123,13 @@ body{
   box-shadow:0 10px 20px rgba(0,0,0,0.6);
 }
 
-/* INSTALL STEPS */
-.steps{
-  text-align:left;
-  max-width:500px;
-  margin:auto;
-}
-.steps p{
-  margin:10px 0;
-}
-
-/* FLOAT ANIMATION */
+/* FLOAT */
 @keyframes float{
   0%{transform:translateY(0);}
   50%{transform:translateY(-10px);}
   100%{transform:translateY(0);}
 }
+
 .float{
   animation:float 3s ease-in-out infinite;
 }
@@ -118,7 +140,11 @@ body{
   padding:30px;
   color:#94a3b8;
 }
-.footer a{color:gold;text-decoration:none;}
+
+.footer a{
+  color:gold;
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -126,7 +152,7 @@ body{
 
 <!-- HEADER -->
 <div class="header">
-  <h1 class="float">DASBMSE School App</h1>
+  <h1 class="float">Dr. Abraham S. Borbor App</h1>
   <p class="tagline">"We Don't Just Teach, We Inspire."</p>
 
   <div class="download-btn">
@@ -158,13 +184,13 @@ body{
   <div class="card"><h3>⚖ Discipline</h3></div>
 </div>
 
-<!-- SCREENSHOTS -->
+<!-- APP PREVIEW -->
 <div class="section">
   <h2>App Preview</h2>
   <div class="slider">
-    <div class="slide">Screenshot 1</div>
-    <div class="slide">Screenshot 2</div>
-    <div class="slide">Screenshot 3</div>
+    <div class="slide">Upload Screenshot 1</div>
+    <div class="slide">Upload Screenshot 2</div>
+    <div class="slide">Upload Screenshot 3</div>
   </div>
 </div>
 
@@ -186,14 +212,14 @@ body{
   <div class="card">🏅 Community Award</div>
 </div>
 
-<!-- INSTALL GUIDE -->
+<!-- INSTALL -->
 <div class="section">
-  <div class="card steps">
+  <div class="card">
     <h2>How to Install</h2>
     <p>1. Click Download App</p>
-    <p>2. Open the APK file</p>
-    <p>3. Allow "Install from Unknown Sources"</p>
-    <p>4. Install and enjoy 🎉</p>
+    <p>2. Open APK file</p>
+    <p>3. Allow Unknown Sources</p>
+    <p>4. Install & Enjoy 🎉</p>
   </div>
 </div>
 
@@ -209,7 +235,7 @@ body{
 
 <!-- FOOTER -->
 <div class="footer">
-  © 2026 DASBMSE App <br><br>
+  © 2026 Dr. Abraham S. Borbor App <br><br>
   Powered by 
   <a href="https://sastechinc-bp.vercel.app" target="_blank">
     SAS TECH INC
